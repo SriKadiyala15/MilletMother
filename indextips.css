@@ -1,0 +1,66 @@
+body {
+    background-color:  #fefce8;
+}
+h2{
+    color:#b35215;
+}
+
+h3{
+    color:#aa4b14;
+}
+
+li{
+    color:#4b5563;
+}
+.tips{
+    background: white;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s;
+    text-decoration: none;
+    display: block;
+}
+
+.tips-hover{
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.storage{
+    background: white;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s;
+    text-decoration: none;
+    display: block;
+}
+
+.storage-hover{
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.shelf-life{
+    background: white;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s;
+    text-decoration: none;
+    display: block;
+}
+.shelf-life-hover{
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.issues{
+    background: white;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s;
+    text-decoration: none;
+    display: block;
+}
+
+.issues-hover{
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
