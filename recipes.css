@@ -1,0 +1,270 @@
+:root {
+    --color-amber-50: #fefce8;
+    --color-amber-800: #b35215;
+    --color-amber-900: #aa4b14;
+    --color-gray-600: #4b5563;
+    --color-gray-500: #6b7280;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: system-ui, sans-serif;
+    background: var(--color-amber-50);
+    line-height: 1.6;
+}
+
+header {
+    background: var(--color-amber-50);
+}
+
+.nav-container   {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1.5rem 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-logo{
+    width: 100px; /* Adjust as needed */
+    height: 100px; /* Adjust as needed */
+    background-image: url('MilletMother\ logo.png'); /* Replace with your image path */
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* Positioning the logo in the top-left corner */
+
+
+
+.nav-links {
+    display: flex;
+    gap: 1.5rem;
+    list-style: none;
+}
+
+.nav-links a {
+    color: var(--color-amber-900);
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: var(--color-amber-800);
+}
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.hero {
+    text-align: center;
+    padding: 3rem 0;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    color: var(--color-amber-900);
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.25rem;
+    color: var(--color-amber-800);
+}
+
+.featured-recipes {
+    margin-top: 3rem;
+}
+
+.featured-recipes h2 {
+    font-size: 2rem;
+    color: var(--color-amber-900);
+    margin-bottom: 1.5rem;
+}
+
+.recipe-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+}
+
+.recipe-card {
+    background: white;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s;
+    text-decoration: none;
+    display: block;
+}
+
+.recipe-card:hover {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.recipe-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.recipe-card-content {
+    padding: 1rem;
+}
+
+.recipe-card h3 {
+    color: var(--color-amber-900);
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+}
+
+.recipe-card p {
+    color: var(--color-gray-600);
+    margin-bottom: 1rem;
+}
+
+.recipe-meta {
+    display: flex;
+    gap: 1rem;
+    color: var(--color-gray-500);
+    font-size: 0.875rem;
+}
+
+.why-millets {
+    margin-top: 4rem;
+    background: var(--color-amber-50);
+    padding: 2rem;
+    border-radius: 0.5rem;
+}
+
+.why-millets h2 {
+    font-size: 2rem;
+    color: var(--color-amber-900);
+    margin-bottom: 1rem;
+}
+
+.benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.benefit h3 {
+    color: var(--color-amber-800);
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+}
+
+.benefit p {
+    color: var(--color-amber-900);
+}
+
+a {
+    color: var(--color-amber-800);
+    text-decoration: none;
+    font-weight: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.tips-storage {
+    background: var(--color-amber-50); /* Amber 50 */
+    color: var(--color-amber-900); /* Amber 900 */
+    padding: 3rem 1rem;
+    border-radius: 0.5rem;
+  }
+  
+  .tips-storage .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .tips-storage h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    color: var(--color-amber-800); /* Amber 800 */
+  }
+  
+  .tips-storage h3 {
+    font-size: 1.75rem;
+    margin-bottom: 1rem;
+    color: var(--color-amber-800); /* Amber 800 */
+  }
+  
+  .tips-storage ul {
+    list-style-type: disc;
+    margin-left: 2rem;
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+    color: var(--color-amber-900); /* Amber 900 */
+  }
+  
+  .tips-storage p {
+    margin-bottom: 1rem;
+    color: var(--color-amber-900); /* Amber 900 */
+  }
+  
+  .tips-storage strong {
+    color: var(--color-amber-800); /* Amber 800 */
+  }
+  
+  @media (max-width: 768px) {
+    .tips-storage {
+      padding: 2rem 1rem;
+    }
+  
+    .tips-storage h2 {
+      font-size: 2rem;
+    }
+  
+    .tips-storage h3 {
+      font-size: 1.5rem;
+    }
+  
+    .tips-storage ul {
+      margin-left: 1rem;
+    }
+  }
+  
+
+footer {
+    background: var(--color-amber-900);
+    color: var(--color-amber-50);
+    margin-top: 3rem;
+    padding: 2rem 0;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .nav-container {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+}
