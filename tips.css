@@ -1,66 +1,157 @@
+:root {
+    --color-amber-50: #fefce8;
+    --color-amber-800: #b35215;
+    --color-amber-900: #aa4b14;
+    --color-gray-600: #4b5563;
+    --color-gray-500: #6b7280;
+    --radius: 0.75rem;
+    --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.08);
+    --shadow-md: 0 4px 8px rgba(0, 0, 0, 0.12);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
-    background-color:  #fefce8;
-}
-h2{
-    color:#b35215;
-}
-
-h3{
-    color:#aa4b14;
+    font-family: system-ui, sans-serif;
+    background: var(--color-amber-50);
+    line-height: 1.6;
+    color: var(--color-gray-600);
+    padding-top: 90px;
 }
 
-li{
-    color:#4b5563;
+header {
+position: fixed;
+  border-bottom: 1px solid var(--color-gray-500);
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  background-color: var(--color-amber-50); /* or any solid color */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
-.tips{
-    background: white;
-    border-radius: 0.5rem;
-    overflow: hidden;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    transition: box-shadow 0.3s;
+
+.nav-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-top: 90px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 0.5rem 1rem;
+}
+
+.nav-logo img {
+  width: 75px;
+  height: auto;
+}
+
+.nav-links {
+    display: flex;
+    gap: 1rem;
+    list-style: none;
+    flex-wrap: wrap;
+}
+
+.nav-links a {
+    color: var(--color-amber-900);
     text-decoration: none;
-    display: block;
+    font-weight: 500;
+    transition: color 0.3s;
 }
 
-.tips-hover{
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+.nav-links a:hover {
+    color: var(--color-amber-800);
 }
-.storage{
+
+@media (max-width: 768px) {
+    .nav-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5rem;
+        margin-top: 1rem;
+    }
+
+    .nav-logo img {
+        width: 100px;
+        margin-bottom: 1rem;
+    }
+}
+
+main, .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+h2, h3 {
+    color: var(--color-amber-900);
+    margin-bottom: 0.75rem;
+}
+
+ul {
+    list-style-type: disc;
+    padding-left: 1.25rem;
+    margin-bottom: 1rem;
+}
+
+li {
+    color: var(--color-gray-600);
+    margin-bottom: 0.5rem;
+}
+
+section.tips-storage {
+    padding: 2rem 1rem;
+}
+
+.tips, .storage, .shelf-life, .issues {
     background: white;
-    border-radius: 0.5rem;
-    overflow: hidden;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    transition: box-shadow 0.3s;
-    text-decoration: none;
-    display: block;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow-sm);
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    transition: box-shadow 0.3s ease;
 }
 
-.storage-hover{
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-.shelf-life{
-    background: white;
-    border-radius: 0.5rem;
-    overflow: hidden;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    transition: box-shadow 0.3s;
-    text-decoration: none;
-    display: block;
-}
-.shelf-life-hover{
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-.issues{
-    background: white;
-    border-radius: 0.5rem;
-    overflow: hidden;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    transition: box-shadow 0.3s;
-    text-decoration: none;
-    display: block;
+.tips:hover, .storage:hover, .shelf-life:hover, .issues:hover {
+    box-shadow: var(--shadow-md);
 }
 
-.issues-hover{
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+.tips p, .storage p, .shelf-life p, .issues p {
+    margin-bottom: 0.75rem;
 }
 
+footer {
+    background: var(--color-amber-900);
+    color: var(--color-amber-50);
+    padding: 2rem 0;
+    margin-top: 4rem;
+    text-align: center;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.footer-content a {
+    color: white;
+    text-decoration: underline;
+    display: inline-block;
+    margin: 0.25rem 0;
+    transition: color 0.2s;
+}
+
+.footer-content a:hover {
+    color: var(--color-amber-800);
+}

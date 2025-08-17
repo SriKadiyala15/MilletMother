@@ -1,0 +1,152 @@
+/* ==================== Root Theme Colors ==================== */
+:root {
+  --color-amber-50: #fefce8;
+  --color-amber-800: #b35215;
+  --color-amber-900: #aa4b14;
+  --color-gray-600: #4b5563;
+  --color-gray-500: #6b7280;
+}
+
+/* ==================== Global Reset ==================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: system-ui, sans-serif;
+  background-color: var(--color-amber-50);
+  color: var(--color-gray-600);
+  line-height: 1.6;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  padding-top: 70px;
+}
+
+/* ==================== Header and Navbar ==================== */
+header {
+  background-color: var(--color-amber-50);
+  border-bottom: 1px solid var(--color-gray-500);
+  background: var(--color-amber-50);
+  border-bottom: 1px solid var(--color-gray-500);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: var(--color-amber-50);
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.nav-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 0.5rem 1rem;
+}
+
+.nav-logo img {
+  width: 75px;
+  height: auto;
+}
+
+.nav-links {
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+  flex-wrap: wrap;
+}
+
+.nav-links a {
+  color: var(--color-amber-900);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: var(--color-amber-800);
+}
+
+/* ==================== Millet Cards ==================== */
+.millet-container {
+  max-width: 1200px;
+  margin: 2rem auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  padding: 0 1rem;
+}
+
+.millet-section {
+  background-color: white;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  max-width: 300px;
+  width: 100%;
+  text-align: center;
+}
+
+.millet-image {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.millet-section h2 {
+  font-size: 1.5rem;
+  color: var(--color-amber-800);
+  margin-bottom: 0.5rem;
+}
+
+.millet-section p {
+  font-size: 0.95rem;
+  color: var(--color-gray-600);
+}
+
+/* ==================== Footer ==================== */
+footer {
+  background-color: var(--color-amber-900);
+  color: var(--color-amber-50);
+  padding: 2rem 1rem;
+  text-align: center;
+  margin-top: auto;
+}
+
+.footer-content a {
+  color: var(--color-amber-50);
+  text-decoration: underline;
+  display: inline-block;
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+}
+
+/* ==================== Responsive ==================== */
+@media (max-width: 768px) {
+  .nav-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: 1rem;
+  }
+
+  .nav-logo img {
+    width: 100px;
+    margin-bottom: 1rem;
+  }
+}

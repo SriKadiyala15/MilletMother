@@ -1,285 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Types of Millets</title>
-    <style>
-        :root {
-            --color-amber-50: #fefce8;
-            --color-amber-800: #92400e;
-            --color-amber-900: #78350f;
-            --color-gray-600: #4b5563;
-            --color-gray-500: #6b7280;
-            --color-white: #ffffff;
-        }
-
-        body {
-            font-family: system-ui, sans-serif;
-            background: var(--color-amber-50);
-            color: var(--color-amber-900);
-            line-height: 1.6;
-            margin: 0;
-            padding: 0;
-        }
-
-        header {
-    background: var(--color-amber-900);
-    color: var(--color-amber-50);
-    height: 100px;
-    padding: 0 20px;
-    overflow: hidden;
-    display: flex;
-    text-align: center;
-    align-items: center;
-    margin: 0;
-    justify-content: space-between;
-}
-
-header h1 {
-    font-size: 1.5rem; /* Smaller font size */
-    margin: 0.5rem 0; /* Adjust margin for spacing */
-    text-align: center;
-}
-
-header .logo{
-    display: flex;
-    align-items: center;
-}
-
-header .title{
-    flex-grow: 1;
-    text-align: center;
-    font-size: medium;
-    color: #fff;
-}
-
-
-        main {
-            max-width: 1200px;
-            margin: 2rem auto;
-            padding: 0 1rem;
-        }
-
-        .millet-container {
-    display: flex; /* Enables Flexbox */
-    flex-wrap: wrap; /* Allows wrapping to the next line if necessary */
-    gap: 20px; /* Adds spacing between the boxes */
-    justify-content: space-between; /* Distributes space between items */
-}
-
-.millet-section {
-    flex: 1 1 calc(33.333% - 20px); /* Adjusts each box to take 1/3 of the row, minus the gap */
-    box-sizing: border-box; /* Ensures padding and borders are included in width */
-    max-width: 300px; /* Optional: Prevents boxes from getting too wide */
-}
-
-
-.millet-image {
-    max-width: 100%;
-    height: auto;
-    margin: 1rem auto;
-    border-radius: 0.5rem;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    width: 100%; /* Image adapts to box width */
-    height: 150px; /* Adjust height for consistency */
-    object-fit: cover;
-}
-.millet-section img {
-    float: right;
-    max-width: 300px;
-    margin: 0 0 1rem 1rem;
-    border-radius: 0.5rem;
-}
-
-
-
-        .millet-section h2 {
-            font-size: 1.75rem;
-            color: var(--color-amber-800);
-            margin-bottom: 1rem;
-        }
-
-        .millet-section ul {
-            margin: 0;
-            padding: 0 0 0 1.5rem;
-            list-style-type: disc;
-        }
-
-        .millet-section ul li {
-            margin-bottom: 0.5rem;
-        }
-
-        .nav-container   {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 1.5rem 1rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-.nav-logo{
-    width: 100px; /* Adjust as needed */
-    height: 100px; /* Adjust as needed */
-    background-image: url('MilletMother\ logo.png'); /* Replace with your image path */
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-        footer {
-            background: var(--color-amber-900);
-            color: var(--color-amber-50);
-            text-align: center;
-            padding: 1rem;
-            margin-top: 2rem;
-        }
-
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Types of Millets</title>
+  <link rel="stylesheet" href="types.css"/>
 </head>
 <body>
-
-    <header>
-        <nav>
-            <div class="nav-container">
-                <div class="logo">
-                <a href="index.html" class="nav-logo">
-                    <img src="MilletMother logo.jpg" class="nav-logo" height="80px;">
-                </a>
-            </div>
-            </div>
-        </nav>
-        <div class="title">
-        <h1>Types of Millets</h1>
-        </div>
-    </header>
-
-
-<main>
-    <div class="millet-container">
-        <div class="millet-section">
-            <h2>Finger Millet (Ragi)</h2>
-            <img src="/images/Ragi.jpeg" class="millet-image">
-            <p><strong>Description:</strong> Known as a powerhouse of nutrients, Ragi is rich in calcium and dietary fiber, making it an excellent choice for bone health and digestion.</p>
-            <p><strong>Health Benefits:</strong></p>
-            <ul>
-                <li>Helps manage diabetes</li>
-                <li>Boosts bone strength</li>
-                <li>Aids in weight loss</li>
-            </ul>
-            <p><strong>Popular Dishes:</strong> Ragi porridge, Ragi roti, Ragi malt.</p>
-        </div>
-
-        <div class="millet-section">
-            <h2>Pearl Millet (Bajra)</h2>
-            <img src="/images/Bajra.jpeg" class="millet-image">
-            <p><strong>Description:</strong> A widely cultivated millet, Pearl Millet is packed with iron, magnesium, and protein.</p>
-            <p><strong>Health Benefits:</strong></p>
-            <ul>
-                <li>Improves heart health</li>
-                <li>Reduces bad cholesterol levels</li>
-                <li>Enhances digestion</li>
-            </ul>
-            <p><strong>Popular Dishes:</strong> Bajra khichdi, Bajra roti, Bajra ladoo.</p>
-        </div>
-
-        <div class="millet-section">
-        <h2>Foxtail Millet</h2>
-        <img src="/images/Foxtail.jpeg" class="millet-image">
-        <p><strong>Description:</strong> A small, easily digestible grain, Foxtail Millet is high in complex carbohydrates and low in fat.</p>
-        <ul>
-            <li>Helps control blood sugar levels</li>
-            <li>Boosts immunity</li>
-            <li>Improves skin and hair health</li>
+  <header>
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo">
+        <img src="MilletMother logo.jpg" alt="MilletMother Logo" />
+      </a>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="types.html">Types of Millets</a></li>
+          <li><a href="recipes.html">Recipes</a></li>
+          <li><a href="tips.html">Tips & Storage</a></li>
         </ul>
-        <p><strong>Popular Dishes:</strong> Foxtail millet upma, dosa, and salad.</p>
+      </nav>
     </div>
+  </header>
 
-    <div class="millet-section">
-        <h2>Sorghum (Jowar)</h2>
-        <img src="/images/Jowar.jpeg" class="millet-image">
-        <p><strong>Description:</strong> One of the most versatile millets, Jowar is gluten-free and loaded with antioxidants, iron, and protein.</p>
-        <p><strong>Health Benefits:</strong></p>
-        <ul>
-            <li>Promotes heart health.</li>
-            <li>Improves bone density.</li>
-            <li>Provides energy and boosts metabolism.</li>
-        </ul>
-        <p><strong>Popular Dishes:</strong> Jowar roti, Jowar dosa, Jowar porridge.</p>
-     </div>
+  <main>
+    <div class="millet-container" id="milletContainer"></div>
+  </main>
 
-     <div class="millet-section">
-        <h2>Barnyard Millet</h2>
-        <img src="/images/Barnyard.jpeg" class="millet-image">
-        <p><strong>Description:</strong> This millet is low in calories and high in fiber, making it an excellent choice for weight watchers.</p>
-        <p><strong>Health Benefits:</strong></p>
-        <ul>
-            <li>Helps in weight management.</li>
-            <li>Reduces cholesterol.</li>
-            <li>Good for digestion.</li>
-        </ul>
-        <p><strong>Popular Dishes:</strong> Barnyard millet pongal, Barnyard millet khichdi.</p>
-     </div>
-
-     <div class="millet-section">
-        <h2>Little Millet</h2>
-        <img src="/images/little millet.jpeg" class="millet-image">
-        <p><strong>Description:</strong> Known for its small grain size, Little Millet is rich in iron and fiber, and it cooks quickly, making it perfect for busy schedules.</p>
-        <p><strong>Health Benefits:</strong></p>
-        <ul>
-            <li>Controls blood sugar levels.</li>
-            <li>Improves gut health.</li>
-            <li>Aids in detoxification.</li>
-        </ul>
-        <p><strong>Popular Dishes:</strong> Little millet pulao, Little millet idli.</p>
-     </div>
-
-     <div class="millet-section">
-        <h2>Kodo Millet</h2>
-        <img src="/images/Kodo.png" class="millet-image">
-        <p><strong>Description:</strong> Kodo Millet is a rich source of polyphenols, antioxidants, and dietary fiber, making it beneficial for overall health.</p>
-        <p><strong>Health Benefits:</strong></p>
-        <ul>
-            <li>Aids in weight management.</li>
-            <li>Detoxifies the body.</li>
-            <li>Reduces joint pain and inflammation.</li>
-        </ul>
-        <p><strong>Popular Dishes:</strong> Kodo millet biryani, Kodo millet salad.</p>
-     </div>
-
-     <div class="millet-section">
-        <h2>Proso Millet</h2>
-        <img src="/images/Proso.jpeg" class="millet-image">
-        <p><strong>Description:</strong> A nutrient-dense grain, Proso Millet is high in protein and low in glycemic index, making it ideal for diabetic-friendly diets.</p>
-        <p><strong>Health Benefits:</strong></p>
-        <ul>
-            <li>Improves digestion.</li>
-            <li>Helps manage diabetes.</li>
-            <li>Boosts energy levels.</li>
-        </ul>
-        <p><strong>Popular Dishes:</strong> Proso millet soup, Proso millet kheer.</p>
-     </div>
-
-     <div class="millet-section">
-        <h2>Brown Top Millet</h2>
-        <img src="/images/Brown-top.png" class="millet-image">
-        <p><strong>Description:</strong> A lesser-known millet, Brown Top Millet is highly nutritious and helps rejuvenate the body with its rich nutrient profile.</p>
-        <p><strong>Health Benefits:</strong></p>
-        <ul>
-            <li>Enhances digestion.</li>
-            <li>Reduces cholesterol.</li>
-            <li>Improves heart health.</li>
-        </ul>
-        <p><strong>Popular Dishes:</strong> Brown top millet upma, Brown top millet dosa.</p>
-     </div>
-        <!-- Add other millet sections here -->
+  <footer>
+    <div class="footer-content">
+      <p>&copy; <span id="year"></span> MilletMother. All rights reserved.</p>
+      <a href="types.html">Types of Millets</a><br />
+      <a href="recipes.html">Recipes</a><br />
+      <a href="tips.html">Tips & Stroage</a>
     </div>
-</main>
+  </footer>
+  <script>
+    // Set year in footer
+    document.getElementById("year").textContent = new Date().getFullYear();
 
+    // Fetch millets from backend and render them
+    fetch('https://milletmother-backend.onrender.com/api/millets')
+      .then(response => response.json())
+      .then(data => {
+        const container = document.getElementById('milletContainer');
 
-<footer>
-    <p>&copy; 2025 Millet World. All rights reserved.</p>
-</footer>
+        data.forEach(millet => {
+          const card = document.createElement('div');
+          card.className = 'millet-section';
 
+          card.innerHTML = `
+            <h2>${millet.name}</h2>
+            <img src="${millet.imageUrl}" alt="${millet.name}" class="millet-image"/>
+            <p><strong>Description:</strong> ${millet.description}</p>
+          `;
+
+          container.appendChild(card);
+        });
+      })
+      .catch(error => {
+        console.error('Error fetching millet data:', error);
+        document.getElementById('milletContainer').innerHTML = '<p>Failed to load millets.</p>';
+      });
+  </script>
 </body>
 </html>
