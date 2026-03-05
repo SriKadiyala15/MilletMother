@@ -13,8 +13,11 @@ This project addresses the misconception that millets are only nutritious but no
 
 **Tech Stack-**
 •	Backend: Java, Spring Boot
+
 •	Database: MongoDB
+
 •	Frontend: HTML, CSS
+
 •	Build Tool: Maven
 
 **Features-**
