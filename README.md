@@ -21,6 +21,7 @@ This project addresses the misconception that millets are only nutritious but no
 •	Build Tool: Maven
 
 **Features-**
+
 •	View different millet types with nutritional benefits.
 
 •	Explore step-by-step recipes with cooking instructions.
