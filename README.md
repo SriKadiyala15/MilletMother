@@ -22,6 +22,9 @@ This project addresses the misconception that millets are only nutritious but no
 
 **Features-**
 •	View different millet types with nutritional benefits.
+
 •	Explore step-by-step recipes with cooking instructions.
+
 •	Access video-based tutorials for better understanding.
+
 •	Tips and recommendations for millet storage and cooking.
