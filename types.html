@@ -40,7 +40,7 @@
     document.getElementById("year").textContent = new Date().getFullYear();
 
     // Fetch millets from backend and render them
-    fetch('https://milletmother-backend.onrender.com/api/millets')
+    fetch('https://milletmother-backend-vqt0.onrender.com/api/millets')
       .then(response => response.json())
       .then(data => {
         const container = document.getElementById('milletContainer');
