@@ -13,7 +13,7 @@ This project addresses the misconception that millets are only nutritious but no
 
 **NOTE-** After opening the frontend link, please wait at least 30 seconds for the backend to wake up before using the application.
 
-**Project Link-** https://fascinating-cendol-704513.netlify.app/
+**Project Link-** https://millet-mother.vercel.app/
 
 **Tech Stack-**
 
