@@ -7,11 +7,13 @@
   <link rel="stylesheet" href="types.css"/>
 </head>
 <body>
+
   <header>
     <div class="nav-container">
       <a href="index.html" class="nav-logo">
         <img src="MilletMother logo.jpg" alt="MilletMother Logo" />
       </a>
+
       <nav>
         <ul class="nav-links">
           <li><a href="index.html">Home</a></li>
@@ -32,36 +34,78 @@
       <p>&copy; <span id="year"></span> MilletMother. All rights reserved.</p>
       <a href="types.html">Types of Millets</a><br />
       <a href="recipes.html">Recipes</a><br />
-      <a href="tips.html">Tips & Stroage</a>
+      <a href="tips.html">Tips & Storage</a>
     </div>
   </footer>
+
   <script>
-    // Set year in footer
+    // Footer year
     document.getElementById("year").textContent = new Date().getFullYear();
 
-    // Fetch millets from backend and render them
-    fetch('https://milletmother-backend-vqt0.onrender.com/api/millets')
-      .then(response => response.json())
-      .then(data => {
-        const container = document.getElementById('milletContainer');
+    // Static millet data
+    const millets = [
+      {
+        name: "Finger Millet (Ragi)",
+        description: "Known as a powerhouse of nutrients, Ragi is rich in calcium and dietary fiber, making it an excellent choice for bone health and digestion.",
+        imageUrl: "images/Ragi.jpeg"
+      },
+      {
+        name: "Pearl Millet (Bajra)",
+        description: "A widely cultivated millet, Pearl Millet is packed with iron, magnesium, and protein.",
+        imageUrl: "images/Bajra.jpeg"
+      },
+      {
+        name: "Foxtail Millet",
+        description: "A small, easily digestible grain, Foxtail Millet is high in complex carbohydrates and low in fat.",
+        imageUrl: "images/Foxtail.jpeg"
+      },
+      {
+        name: "Sorghum (Jowar)",
+        description: "One of the most versatile millets, Jowar is gluten-free and loaded with antioxidants, iron, and protein.",
+        imageUrl: "images/Jowar.jpeg"
+      },
+      {
+        name: "Barnyard Millet",
+        description: "This millet is low in calories and high in fiber, making it an excellent choice for weight watchers.",
+        imageUrl: "images/Barnyard.jpeg"
+      },
+      {
+        name: "Little Millet",
+        description: "Known for its small grain size, Little Millet is rich in iron and fiber, and it cooks quickly, making it perfect for busy schedules.",
+        imageUrl: "images/little millet.jpeg"
+      },
+      {
+        name: "Kodo Millet",
+        description: "Kodo Millet is a rich source of polyphenols, antioxidants, and dietary fiber, making it beneficial for overall health.",
+        imageUrl: "images/Kodo.png"
+      },
+      {
+        name: "Proso Millet",
+        description: "A nutrient-dense grain, Proso Millet is high in protein and low in glycemic index, making it ideal for diabetic-friendly diets.",
+        imageUrl: "images/Proso.jpeg"
+      },
+      {
+        name: "Brown Top Millet",
+        description: "A lesser-known millet, Brown Top Millet is highly nutritious and helps rejuvenate the body with its rich nutrient profile.",
+        imageUrl: "images/Brown-top.png"
+      }
+    ];
 
-        data.forEach(millet => {
-          const card = document.createElement('div');
-          card.className = 'millet-section';
+    const container = document.getElementById("milletContainer");
 
-          card.innerHTML = `
-            <h2>${millet.name}</h2>
-            <img src="${millet.imageUrl}" alt="${millet.name}" class="millet-image"/>
-            <p><strong>Description:</strong> ${millet.description}</p>
-          `;
+    millets.forEach(millet => {
+      const card = document.createElement("div");
+      card.className = "millet-section";
 
-          container.appendChild(card);
-        });
-      })
-      .catch(error => {
-        console.error('Error fetching millet data:', error);
-        document.getElementById('milletContainer').innerHTML = '<p>Failed to load millets.</p>';
-      });
+      card.innerHTML = `
+        <h2>${millet.name}</h2>
+        <img src="${millet.imageUrl}" alt="${millet.name}" class="millet-image"/>
+        <p><strong>Description:</strong> ${millet.description}</p>
+      `;
+
+      container.appendChild(card);
+    });
   </script>
+
 </body>
 </html>
